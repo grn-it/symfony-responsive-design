@@ -17,4 +17,4 @@ make up
 ```
 
 ## Showcase
-[See what the design looks like](https://github.com/grn-it/assets/blob/main/symfony-application-using-twig-showcase.gif) (88.2 Mb, gif)
+[See what the design looks like](https://github.com/grn-it/assets/tree/main/symfony-application-using-twig) (88.2 Mb, gif)
