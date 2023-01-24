@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+        {% endblock %}
+        
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock javascripts %}
+    </head>
+    <body>
+        {% include 'base/header/header.html.twig' %}
+        {% block body %}{% endblock %}
+        {% include 'base/footer/footer.html.twig' %}
+    </body>
+</html>

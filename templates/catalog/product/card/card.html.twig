@@ -1,0 +1,28 @@
+<div class="col-4 col-lg-2 p-3 d-flex align-items-stretch">
+    <div class="card card-product">
+        <img class="card-img-top" src="/catalog/products/{{ product.id }}/photos/{{ product.photo.name }}.{{ product.photo.extension }}">
+        <div class="card-body">
+            <div class="card-product-category">{{ product.category.name }}</div>
+            <div class="card-product-brand text-truncate" title="{{ product.brand.name }}">{{ product.brand.name }}</div>
+            <div class="card-product-name text-truncate" title="{{ product.name }}">{{ product.name }}</div>
+            <div class="text-end">
+                <div class="card-product-price-old d-inline">${{ product.priceOld }}</div>
+                <div class="card-product-price d-inline">${{ product.price }}</div>
+            </div>
+        </div>
+        <div>
+            <div class="d-flex">
+                <div class="flex-fill">
+                    <button class="card-button card-button-wishlist btn w-100">
+                        {{ include('catalog/product/card/icons/wishlist.svg.html.twig') }}
+                    </button>
+                </div>
+                <div class="flex-fill">
+                    <button class="card-button card-button-cart btn w-100">
+                        {{ include('catalog/product/card/icons/cart.svg.html.twig') }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

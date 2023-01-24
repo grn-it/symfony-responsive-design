@@ -1,0 +1,10 @@
+<div class="container-xxl container-header mt-5 text-center">
+    <h2>You may like it</h2>
+</div>
+<div id="card-product-container" class="container-xxl mt-5">
+    <div class="row">
+        {% for product in products %}
+            {% include 'catalog/product/card/card.html.twig' %}
+        {% endfor %}
+    </div>
+</div>

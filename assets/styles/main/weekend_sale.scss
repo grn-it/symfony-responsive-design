@@ -1,0 +1,32 @@
+#weekend-sale-container {
+  .card-sale {
+    border: 0 !important;
+    border-radius: 0.375rem !important;
+    box-shadow: 0 5px 5px #d1e7dd !important;
+    
+    img {
+      border-radius: 0.375rem !important;
+    }
+  }
+  
+  #card-sale-overlay-percent {
+    color: #dc3545;
+  }
+  
+  #card-sale-overlay-title {
+    $card-img-overlay-padding: 0;
+    
+    h2 {
+      @include font-size(2.5rem);
+      @include media-breakpoint-down(lg) {
+        @include font-size(2rem);
+      }
+      @include padding(1rem);
+      color: #ffe69c;
+      background-color: #000;
+      opacity: 0.8;
+      border-radius: 5px 5px 0 0;
+      text-transform: uppercase;
+    }
+  }
+}

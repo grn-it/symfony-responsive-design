@@ -1,0 +1,33 @@
+#card-category-container {
+  .card-category {
+    transition: transform .5s ease;
+    box-shadow: 0 5px 5px #d1e7dd !important;
+    border: 0 !important;
+    position: relative !important;
+    
+    &:hover {
+      transform: scale(1.1);
+      z-index: 1 !important;
+      border: 0 !important;
+    }
+    
+    .card {
+      img {
+        &:hover {
+          filter: brightness(1.1);
+        }
+      }
+    }
+    
+    .card-category-overlay-title {
+      h2 {
+        @include font-size(2.5rem);
+        @include padding(0.5rem);
+        color: #fff;
+        background-color: #000;
+        opacity: 0.6;
+        border-radius: 5px 5px 0 0;
+      }
+    }
+  }
+}

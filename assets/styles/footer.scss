@@ -1,0 +1,95 @@
+footer {
+  nav {
+    background: linear-gradient(135deg, #198754, #146c43);
+
+    .footer-menu {
+      color: #fff;
+
+      h3 {
+        border-bottom: 2px solid #d1e7dd;
+        padding-bottom: 10px;
+      }
+
+      ul {
+        padding: 0 !important;
+
+        li {
+          list-style-type: none;
+
+          a {
+            color: #d1e7dd;
+            text-decoration: none;
+
+            &:hover {
+              color: #fff;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .accordion {
+      .accordion-item {
+        background-color: #d1e7dd !important;
+        
+        &:hover {
+          background-color: #a3cfbb !important;
+        }
+        
+        .accordion-header {
+          .accordion-button {
+            color: #051b11 !important;
+            
+            &:focus {
+              box-shadow: none !important;
+            }
+
+            &:not(.collapsed) {
+              background-color: #a3cfbb !important;
+            }
+            
+            &:not(.collapsed)::after {
+              background-image: var(--bs-accordion-btn-icon) !important;
+            }
+          }
+        }
+
+        .accordion-body {
+          background-color: #fff !important;
+
+          ul {
+            margin-bottom: 0;
+            padding-left: 0 !important;
+            
+            li {
+              list-style-type: none !important;
+              padding-bottom: 5px;
+              
+              a {
+                color: #0a3622 !important;
+                text-decoration: none !important;
+                
+                &:hover {
+                  color: #0f5132 !important;
+                  text-decoration: underline !important;
+                }
+              }
+            }
+          }
+        }
+        
+        &:first-of-type {
+          .accordion-button {
+            border-radius: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+#attribution {
+  background-color: #051b11;
+  color: #d1e7dd;
+}

@@ -1,0 +1,129 @@
+header {
+  .navbar {
+    box-shadow: 0 5px 5px #aaa;
+
+    background: linear-gradient(135deg, #198754, #146c43);
+    
+    &:focus-visible {
+      $color: #75b798;
+      outline: 1px solid $color;
+      box-shadow: 0 0 0 0.25rem $color !important;
+    }
+    
+    .navbar-brand {
+      .navbar-brand-logo {
+        svg {
+          filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(105%) contrast(95%);
+          @include rfs(3.2rem, width);
+        }
+      }
+      
+      .navbar-brand-name {
+        @include font-size(2rem);
+        color: #fff;
+        font-weight: bold !important;
+      }
+    }
+
+    .navbar-toggler {
+      background-color: #fff !important;
+
+      &:hover {
+        background-color: #d1e7dd !important;
+      }
+
+      &:focus {
+        box-shadow: none !important;
+      }
+      
+      .navbar-toggler-icon {
+        svg {
+          filter: invert(30%) sepia(16%) saturate(2628%) hue-rotate(104deg) brightness(96%) contrast(84%);
+        }
+      }
+    }
+    
+    .navbar-form-search {
+      .navbar-search-icon {
+        margin-left: 12px;
+        margin-top: 6px;
+        filter: invert(82%) sepia(7%) saturate(837%) hue-rotate(100deg) brightness(96%) contrast(91%);
+      }
+  
+      .navbar-search-input {
+        padding-left: 44px !important;
+      }
+    }
+
+    .navbar-collapse {
+      flex-grow: 0 !important;
+    }
+    
+    .navbar-nav {
+      margin-top: 10px;
+
+      .navbar-wishlist-icon svg,
+      .navbar-cart-icon svg,
+      .navbar-profile-icon svg ,
+      .navbar-logout-icon svg {
+        filter: invert(99%) sepia(77%) saturate(293%) hue-rotate(305deg) brightness(114%) contrast(102%);
+      }
+
+      .navbar-wishlist-label,
+      .navbar-cart-label,
+      .navbar-profile-label {
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+
+      .navbar-wishlist-link:hover,
+      .navbar-cart-link:hover,
+      .navbar-profile-link:hover,
+      .navbar-logout-link:hover {
+        background-color: #479f76;
+      }
+
+      .navbar-badge {
+        top: -5px;
+        left: 80%;
+        z-index: 1;
+        opacity: 0.8;
+      }
+
+      .navbar-profile-dropdown-menu {
+        svg {
+          filter: invert(30%) sepia(92%) saturate(366%) hue-rotate(100deg) brightness(92%) contrast(95%);
+        }
+      }
+
+      .navbar-profile-dropdown-menu {
+        .dropdown-item:hover {
+          color: #146c43;
+        }
+      }
+
+      .navbar-profile-dropdown-menu {
+        .badge {
+          margin-left: 5px;
+        }
+      }
+
+      .navbar-profile-dropdown-menu {
+        .badge-warning {
+          background-color: #e35d6a;
+        }
+      }
+    }
+    
+    @media (min-width: 992px) {
+      .navbar-form-search {
+        width: 350px;
+      }
+
+      .navbar-nav {
+        margin-top: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+}

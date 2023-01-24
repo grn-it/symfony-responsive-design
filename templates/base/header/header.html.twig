@@ -1,0 +1,143 @@
+<header>
+    <nav class="navbar navbar-expand-md bg-success">
+        <div class="container-xxl">
+            {# brand #}
+            <a class="navbar-brand" href="#">
+                <div class="navbar-brand-logo d-inline">
+                    {{ include('base/header/menu/icons/brand_logo.svg.html.twig') }}
+                </div>
+                <div class="navbar-brand-name d-inline align-top">Shop</div>
+            </a>
+            {# toggle button #}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon">
+                    {{ include('base/header/menu/icons/menu.svg.html.twig') }}
+                </div>
+            </button>
+            {# menu #}
+            <div id="navbarContent" class="navbar-collapse collapse">
+                {# search #}
+                <form class="navbar-form-search d-flex position-relative">
+                    <div class="navbar-search-icon position-absolute">
+                        {{ include('base/header/menu/icons/search.svg.html.twig') }}
+                    </div>
+                    <input class="form-control navbar-search-input" type="search" placeholder="Search">
+                </form>
+                {# list #}
+                <ul class="navbar-nav">
+                    {# wishlist #}
+                    <li class="nav-item">
+                        <a class="navbar-wishlist-link nav-link text-nowrap" href="#">
+                            <div class="navbar-wishlist-icon d-inline position-relative">
+                                <span class="navbar-badge position-absolute translate-middle badge rounded-pill bg-danger">
+                                    1
+                                </span>
+                                <span>
+                                    {{ include('base/header/menu/icons/wishlist.svg.html.twig') }}
+                                </span>
+                            </div>
+                            <div class="navbar-wishlist-label d-inline">Wishlist</div>
+                        </a>
+                    </li>
+                    {# cart #}
+                    <li class="nav-item">
+                        <a class="navbar-cart-link nav-link text-nowrap" href="#">
+                            <div class="navbar-cart-icon d-inline position-relative">
+                                <span class="navbar-badge position-absolute translate-middle badge rounded-pill bg-danger">
+                                    3
+                                </span>
+                                <span>{{ include('base/header/menu/icons/cart.svg.html.twig') }}</span>
+                            </div>
+                            <div class="navbar-cart-label d-inline">Cart</div>
+                        </a>
+                    </li>
+                    {# profile #}
+                    <li class="nav-item dropdown">
+                        <a class="navbar-profile-link nav-link dropdown-toggle text-nowrap" href="#" data-bs-toggle="dropdown">
+                            <div class="navbar-profile-icon d-inline position-relative">
+                                {{ include('base/header/menu/icons/profile.svg.html.twig') }}
+                            </div>
+                            <div class="navbar-profile-label d-inline">Profile</div>
+                        </a>
+                        {# dropdown #}
+                        <ul class="navbar-profile-dropdown-menu dropdown-menu">
+                            {# orders #}
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="navbar-profile-orders-icon d-inline">
+                                        {{ include('base/header/menu/icons/profile/orders.svg.html.twig') }}
+                                    </div>
+                                    <span>Orders</span>
+                                    <span class="badge text-bg-success">4</span>
+                                </a>
+                            </li>
+                            {# bank cards #}
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="navbar-profile-bank-cards-icon d-inline">
+                                        {{ include('base/header/menu/icons/profile/bank_cards.svg.html.twig') }}
+                                    </div>
+                                    <span>Bank cards</span>
+                                </a>
+                            </li>
+                            {# notifications #}
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="navbar-profile-notifications-icon d-inline">
+                                        {{ include('base/header/menu/icons/profile/notifications.svg.html.twig') }}
+                                    </div>
+                                    <span>Notifications</span>
+                                    <span class="badge badge-warning">2</span>
+                                </a>
+                            </li>
+                            {# reviews #}
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="navbar-profile-reviews-icon d-inline">
+                                        {{ include('base/header/menu/icons/profile/reviews.svg.html.twig') }}
+                                    </div>
+                                    <span>Reviews</span>
+                                </a>
+                            </li>
+                            {# receipts #}
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="navbar-profile-receipts-icon d-inline">
+                                        {{ include('base/header/menu/icons/profile/receipts.svg.html.twig') }}
+                                    </div>
+                                    <span>Receipts</span>
+                                </a>
+                            </li>
+                            {# returns #}
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="navbar-profile-returns-icon d-inline">
+                                        {{ include('base/header/menu/icons/profile/returns.svg.html.twig') }}
+                                    </div>
+                                    <span>Returns</span>
+                                </a>
+                            </li>
+                            {# settings #}
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="navbar-profile-settings-icon d-inline">
+                                        {{ include('base/header/menu/icons/profile/settings.svg.html.twig') }}
+                                    </div>
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    {# logout #}
+                    <li class="nav-item">
+                        <a class="navbar-logout-link nav-link text-nowrap" href="#">
+                            <div class="navbar-logout-icon d-inline position-relative">
+                                {{ include('base/header/menu/icons/logout.svg.html.twig') }}
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,17 @@
+#welcome-slider-container {
+  .carousel-inner {
+    border-radius: 20px;
+    
+    .carousel-caption {
+      position: relative !important;
+      
+      h2 {
+        @include font-size(3rem);
+      }
+  
+      p {
+        @include font-size(1.5rem);
+      }
+    }
+  }
+}

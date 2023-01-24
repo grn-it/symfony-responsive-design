@@ -1,0 +1,15 @@
+@import 'bootstrap_variables';
+@import "~bootstrap/scss/bootstrap";
+@import 'background';
+@import 'header';
+@import 'footer';
+
+.container-header {
+  h2 {
+    @include font-size(3rem);
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+    color: #0a3622;
+    text-transform: uppercase;
+  }
+}
