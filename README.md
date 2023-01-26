@@ -16,6 +16,9 @@ make install
 make up
 ```
 
+## How to start
+Go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to view the web application.
+
 ## Showcase
 ### Header
 ![Header](https://github.com/grn-it/assets/blob/main/symfony-application-using-twig/header.png)
