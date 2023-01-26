@@ -17,4 +17,23 @@ make up
 ```
 
 ## Showcase
-[See what the design looks like](https://github.com/grn-it/assets/tree/main/symfony-application-using-twig) (88.2 Mb, gif)
+### Header
+![Header](https://github.com/grn-it/assets/blob/main/symfony-application-using-twig/header.png)
+
+### Most Popular Categories
+![Most Popular Categories](https://github.com/grn-it/assets/blob/main/symfony-application-using-twig/most_popular_categories.png)
+
+### You May Like It
+![You May Like It](https://github.com/grn-it/assets/blob/main/symfony-application-using-twig/you_may_like_it.png)
+
+### Weekend Sale
+![Weekend Sale](https://github.com/grn-it/assets/blob/main/symfony-application-using-twig/weekend_sale.png)
+
+### Brands
+![Brands](https://github.com/grn-it/assets/blob/main/symfony-application-using-twig/brands.png)
+
+### Footer
+![Footer](https://github.com/grn-it/assets/blob/main/symfony-application-using-twig/footer.png)
+
+### Responsive Design in Action
+[Show Responsive Design Demo](https://github.com/grn-it/assets/tree/main/symfony-application-using-twig) (88.2 Mb, gif)
