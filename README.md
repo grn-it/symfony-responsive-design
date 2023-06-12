@@ -1,4 +1,4 @@
-# Twig Shop Application
+# Symfony Responsive Design
 
 Sample application using Twig, Twitter Bootstrap, Sass, Stimulus.
 
